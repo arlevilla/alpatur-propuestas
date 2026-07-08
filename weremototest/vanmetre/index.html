@@ -1,1 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Germany, Vienna & Budapest — Van Metre Family</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Jost',sans-serif;color:#4A4A4A;background:#F0EDE8}
+.prop{max-width:720px;margin:0 auto;background:#fff;box-shadow:0 4px 32px rgba(0,0,0,.10)}
+.hdr{background:#264653;padding:20px 28px;display:flex;justify-content:flex-end;align-items:center;min-height:50px}
+.ref{font-size:9px;color:rgba(255,255,255,.45);text-align:right;line-height:1.9;letter-spacing:.8px}
+.hero{background:#E76F51;padding:36px 28px 28px}
+.hero-lbl{font-size:9px;letter-spacing:3.5px;text-transform:uppercase;color:rgba(255,255,255,.65);margin-bottom:6px}
+.hero-title{font-family:'Cormorant Garamond',serif;font-size:40px;font-weight:700;color:#fff;line-height:1.1;margin-bottom:6px}
+.hero-sub{font-size:11px;color:rgba(255,255,255,.8);letter-spacing:1.5px;font-weight:300}
+.hero-client{font-size:11px;color:rgba(255,255,255,.88);margin-top:16px;padding-top:14px;border-top:1px solid rgba(255,255,255,.22);letter-spacing:.4px}
+.hero-client strong{font-weight:600}
+.stats{display:flex;background:#264653}
+.stat{flex:1;padding:11px 6px;text-align:center;border-right:1px solid rgba(255,255,255,.08)}
+.stat:last-child{border-right:none}
+.stn{font-size:20px;color:#fff;font-weight:300}
+.stl{font-size:7px;letter-spacing:1.8px;text-transform:uppercase;color:rgba(255,255,255,.38);margin-top:2px}
+.snav{position:sticky;top:0;z-index:100;background:#1a3341;overflow-x:auto;white-space:nowrap;border-bottom:2px solid #E76F51}
+.snav a{display:inline-block;padding:10px 13px;font-size:10px;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,.6);text-decoration:none;font-weight:500;transition:color .2s}
+.snav a:hover{color:#E76F51}
+.body{padding:24px 20px;background:#F8F6F2}
+.sec-title{font-size:9px;letter-spacing:3px;text-transform:uppercase;color:#9E9E9E;font-weight:600;margin:0 0 14px;padding-bottom:8px;border-bottom:1px solid #E8E3DC}
+.sec{margin-bottom:24px}
+.acc-wrap{margin-bottom:14px}
+.acc-head{background:#264653;padding:13px 16px;display:flex;justify-content:space-between;align-items:center;cursor:pointer;border-radius:8px 8px 0 0;user-select:none}
+.acc-head.collapsed{border-radius:8px}
+.acc-left{display:flex;flex-direction:column;gap:2px}
+.acc-num{font-size:10px;color:rgba(255,255,255,.5);letter-spacing:1px}
+.acc-name{font-size:14px;color:#fff;font-weight:500}
+.acc-right{display:flex;align-items:center;gap:10px}
+.acc-city{font-size:10px;color:#fff;font-weight:600;background:#E76F51;padding:5px 12px;border-radius:5px;white-space:nowrap}
+.chevron{color:rgba(255,255,255,.5);font-size:16px;transition:transform .3s;flex-shrink:0}
+.acc-body{background:#fff;border:1px solid #E8E3DC;border-top:none;border-radius:0 0 8px 8px;overflow:hidden}
+.acc-inner{padding:16px}
+.badge-warn{background:#FFF0EB;color:#B05A2A;font-size:9.5px;padding:7px 10px;border-radius:4px;border-left:3px solid #E76F51;margin-bottom:10px;line-height:1.6;display:block}
+.act-block{margin-bottom:14px}
+.act-block:last-child{margin-bottom:0}
+.act-time{font-size:8px;letter-spacing:2.5px;text-transform:uppercase;color:#E76F51;font-weight:600;margin-bottom:6px;padding-bottom:5px;border-bottom:1px solid #F0EDE8}
+.act-title{font-size:12.5px;font-weight:600;color:#264653;margin-bottom:5px}
+.act-desc{font-size:10.5px;color:#4A4A4A;line-height:1.75}
+.transport-row{display:flex;align-items:center;gap:10px;background:#F8F6F2;border-radius:6px;padding:10px 12px;margin-bottom:10px;border:1px solid #E8E3DC}
+.t-icon{font-size:16px;flex-shrink:0}
+.t-text{font-size:10.5px;color:#4A4A4A;line-height:1.6}
+.t-text strong{color:#264653}
+.footer{background:#264653;padding:26px 28px;text-align:center;min-height:40px}
+.footer-txt{font-size:9.5px;color:rgba(255,255,255,.55);line-height:1.9;letter-spacing:.3px}
+.total-box{background:#264653;border-radius:8px;padding:18px 20px;margin-top:6px;display:flex;justify-content:space-between;align-items:center}
+.total-lbl{font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,.6)}
+.total-val{font-size:22px;font-weight:700;color:#E76F51}
+</style>
+</head>
+<body>
+<div class="prop">
 
+<div class="hdr">
+<div class="ref">TRAVEL PROPOSAL<br>Van Metre Family</div>
+</div>
+
+<div class="hero">
+<div class="hero-lbl">Europe Circuit · 12 Days</div>
+<div class="hero-title">Germany, Vienna<br>&amp; Budapest</div>
+<div class="hero-sub">MAY 18–30, 2026</div>
+<div class="hero-client"><strong>Travelers:</strong> Van Metre Family (3 guests)</div>
+</div>
+
+<div class="stats">
+<div class="stat"><div class="stn">12</div><div class="stl">Days</div></div>
+<div class="stat"><div class="stn">3</div><div class="stl">Cities</div></div>
+<div class="stat"><div class="stn">3</div><div class="stl">Countries</div></div>
+<div class="stat"><div class="stn">3</div><div class="stl">Guests</div></div>
+</div>
+
+<div class="snav">
+<a href="#day1">Munich</a>
+<a href="#day4">Vienna</a>
+<a href="#day6">Bratislava</a>
+<a href="#day7">Budapest</a>
+<a href="#day8">Departure</a>
+</div>
+
+<div class="body">
+
+<div class="sec">
+<div class="sec-title">Day-by-Day Itinerary</div>
+
+<div class="acc-wrap" id="day1">
+<div class="acc-head" onclick="toggleAcc(this)">
+<div class="acc-left"><div class="acc-num">Day 1 · Monday, May 18</div><div class="acc-name">Arrival in Munich</div></div>
+<div class="acc-right"><span class="acc-city">Munich</span><span class="chevron">▾</span></div>
+</div>
+<div class="acc-body">
+<div class="acc-inner">
+
+<div class="transport-row">
+<span class="t-icon">✈️</span>
+<span class="t-text"><strong>Delta Flight 130</strong> — arrival at 9:00 am</span>
+</div>
+<div class="transport-row">
+<span class="t-icon">🚗</span>
+<span class="t-text">Private transfer from Munich Airport to the hotel. Your driver will be waiting in the arrivals area holding a name sign (3 guests).</span>
+</div>
+
+<div class="act-block">
+<div class="act-time">Afternoon · Munich Old Town (3 hours)</div>
+<div class="act-title">Private walking tour</div>
+<div class="act-desc">At 3:00 pm, meet your guide to enjoy a privately guided walking tour of the historic old town center. Begin with the medieval town square, with its highly ornamental town hall and St. Peter's Church, Munich's oldest parish church, built in the 11th century. Stroll by the Church of Our Lady, whose two onion domes are Munich's premier landmark.
+
+The Rathaus Glockenspiel is situated at Marienplatz in the heart of the city. Every day at 11 am, 12 pm (noon), and 5 pm the Glockenspiel chimes and re-enacts two stories from the 16th century, with 43 bells and 32 life-sized figures. The top half tells the story of the marriage of Duke Wilhelm V — who also founded the world-renowned Hofbräuhaus — to Renata of Lorraine. The whole show lasts between 12 and 15 minutes.
+
+Together with your guide, continue to the Hofbräuhaus, where beer and white sausages have been served since 1644. Take a stroll along the grandiose Maximilianstrasse, home to several prominent museums and upscale boutiques, with a pedestrian area stretching from Marienplatz to Karlsplatz offering abundant shopping.
+
+Admire architectural highlights including Duke Albrecht V's Antiquarium, the largest and most beautiful Renaissance hall north of the Alps, the Church of Saint John Nepomuk — a swirling Baroque fantasy by the Asam Brothers — and Fünf Höfe, five contemporary courtyards inserted by Swiss architects Herzog & de Meuron into Munich's ancient urban fabric. Pass through the Viktualienmarkt, one of Europe's oldest daily markets, selling 200 types of bread, 300 types of sausage, and 400 types of beer.</div>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="acc-wrap">
+<div class="acc-head" onclick="toggleAcc(this)">
+<div class="acc-left"><div class="acc-num">Day 2 · Tuesday, May 19</div><div class="acc-name">Olympic Munich & Beer Culture</div></div>
+<div class="acc-right"><span class="acc-city">Munich</span><span class="chevron">▾</span></div>
+</div>
+<div class="acc-body">
+<div class="acc-inner">
+
+<div class="act-block">
+<div class="act-time">Morning · Olympia Park Quarter (3–4 hours)</div>
+<div class="act-title">Historic and panoramic tour</div>
+<div class="act-desc">At 9:00 am, meet your driver-guide to continue your discovery of Munich. The Olympic area, known in German as Olympiagelände, holds a lasting place in history as the site of the 1972 Summer Olympics. Architect Günther Behnisch's Olympic Complex — with its three main facilities, the Olympic Stadium, Olympic Hall, and Swimming Hall — is covered by a vast transparent canopy stretched between a series of tall masts, forming an irregular tent. The Olympic Tower is not only Munich's tallest building but also offers the most spectacular view of the city, with the Bavarian Alps in the background.</div>
+</div>
+
+<div class="act-block">
+<div class="act-time">Afternoon · Beer & Pretzels (3 hours)</div>
+<div class="act-title">Tasting and walking tour</div>
+<div class="act-desc">At 3:00 pm, meet your guide in the hotel lobby for a tasting and walking tour. Munich is famous for its beer halls and beer gardens scattered across the city and, of course, the annual Oktoberfest. Your guide will introduce the history of Bavarian beer and Munich's beer culture, including a visit to the Beer and Oktoberfest Museum, located in a beautifully renovated old townhouse. Enjoy sampling delicious local beer and Bavarian delicacies, including a rich Bavarian Brotzeit platter, at some of Munich's best traditional restaurants and beer halls.</div>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="acc-wrap">
+<div class="acc-head" onclick="toggleAcc(this)">
+<div class="acc-left"><div class="acc-num">Day 3 · Wednesday, May 20</div><div class="acc-name">Freising & Weihenstephan</div></div>
+<div class="acc-right"><span class="acc-city">Munich</span><span class="chevron">▾</span></div>
+</div>
+<div class="acc-body">
+<div class="acc-inner">
+
+<div class="act-block">
+<div class="act-time">Morning · Freising Excursion (4 hours)</div>
+<div class="act-title">Cathedral city and the world's oldest brewery</div>
+<div class="act-desc">At 9:00 am, meet your driver-guide for a drive to the cathedral city of Freising. With its bustling historic quarter between Cathedral Hill and Weihenstephan Hill, rows of magnificent residences, and busy market street, Freising makes for a lovely excursion. The focal point is Marienplatz, with its Marian column dating from 1674.
+
+Take a walking tour of the historic city center, then continue to the Benedictine Weihenstephan Abbey, founded in 725, which established the oldest still-operating brewery in the world in 1040 — the Bavarian Brewery Weihenstephan.</div>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="acc-wrap" id="day4">
+<div class="acc-head" onclick="toggleAcc(this)">
+<div class="acc-left"><div class="acc-num">Day 4 · Thursday, May 21</div><div class="acc-name">Munich to Vienna</div></div>
+<div class="acc-right"><span class="acc-city">Vienna</span><span class="chevron">▾</span></div>
+</div>
+<div class="acc-body">
+<div class="acc-inner">
+
+<div class="transport-row">
+<span class="t-icon">🚄</span>
+<span class="t-text">At 7:00 am, transfer to Munich Hbf train station. <strong>Railjet #65</strong> departs Munich Hbf at 8:47 am, arriving Vienna Hbf at 1:30 pm (3 guests).</span>
+</div>
+
+<div class="badge-warn">Welcome to Vienna. Upon arrival, your driver will meet you on the platform holding a sign with the name "Van Metre" and take you by private transfer to your hotel for check-in.</div>
+
+<div class="act-block">
+<div class="act-time">Afternoon · Ringstrasse & Vienna Historic Center (4 hours)</div>
+<div class="act-title">Panoramic stroll</div>
+<div class="act-desc">At 3:00 pm, meet your guide in the hotel lobby for a panoramic stroll along Vienna's Ringstrasse, one of the most beautiful boulevards in the world, home to the Imperial Palace, the Kunsthistorisches Museum, the Natural History Museum, the Vienna State Opera, and the gothic City Hall and Parliament.
+
+Afterwards, explore the historic city center, strolling along Kärntner Strasse, the Graben, and Kohlmarkt. Admire St. Stephen's Cathedral, the centerpiece of the city and the most important religious building in Austria's capital, recognizable by its multi-colored tile roof.
+
+During your tour, enjoy a whistle-stop tour of Vienna's iconic coffeehouse culture, recognized by UNESCO as intangible cultural heritage, sampling local specialties such as Wiener Melange, Franziskaner, Einspänner, or Kleiner Brauner, accompanied by a piece of delicious torte or cake.</div>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="acc-wrap">
+<div class="acc-head" onclick="toggleAcc(this)">
+<div class="acc-left"><div class="acc-num">Day 5 · Friday, May 22</div><div class="acc-name">Spanish Riding School & Imperial Palaces</div></div>
+<div class="acc-right"><span class="acc-city">Vienna</span><span class="chevron">▾</span></div>
+</div>
+<div class="acc-body">
+<div class="acc-inner">
+
+<div class="act-block">
+<div class="act-time">Morning · Spanish Riding School Morning Rehearsal & Backstage Tour (2.5 hours)</div>
+<div class="act-title">Lipizzaner horses rehearsal</div>
+<div class="act-desc">At 11:30 am, stop by the morning rehearsal of the Lipizzaner horses at the Spanish Riding School, a significant part of Austria's cultural heritage and the oldest riding academy in the world, where the High School of Classical Horsemanship has been cherished and maintained for over 430 years. (Morning exercises run from 10:00 am to 12:00 pm; we recommend visiting for approximately 30 minutes and then enjoying the backstage tour afterward.)
+
+At 12:30 pm, meet your guide in the lobby for a private backstage tour, joined by a rider, visiting the stables, tack room, and, of course, the horses.</div>
+</div>
+
+<div class="act-block">
+<div class="act-time">Afternoon · Schönbrunn Palace & Belvedere (4 hours)</div>
+<div class="act-title">Imperial palaces</div>
+<div class="act-desc">At 3:00 pm, meet your guide and driver in the hotel lobby to continue your discovery of Vienna. Begin with a visit to Schönbrunn Palace, one of Europe's most beautiful Baroque complexes, in the possession of the Habsburgs since 1569 and a UNESCO World Heritage site.
+
+Visit the Belvedere's magnificent Upper and Lower Palaces, built in the 18th century as the summer residence for Prince Eugene of Savoy, set among extensive gardens considered one of the world's finest Baroque landmarks. Take a tour of the Austrian National Gallery, housed in the Upper Belvedere Palace, featuring Gustav Klimt's golden paintings "The Kiss" and "Judith," along with works by Schiele, Kokoschka, and many other Austrian artists.</div>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="acc-wrap" id="day6">
+<div class="acc-head" onclick="toggleAcc(this)">
+<div class="acc-left"><div class="acc-num">Day 6 · Saturday, May 23</div><div class="acc-name">Vienna · Bratislava · Budapest</div></div>
+<div class="acc-right"><span class="acc-city">Bratislava</span><span class="chevron">▾</span></div>
+</div>
+<div class="acc-body">
+<div class="acc-inner">
+
+<div class="transport-row">
+<span class="t-icon">🚤</span>
+<span class="t-text">At 7:00 am, private transfer to the Twin City Liner dock at Schwedenplatz. Hydrofoil to Bratislava (75 minutes, tickets booked under the name Van Metre). Departure from Vienna Schwedenplatz at 8:30 am, arriving Bratislava at 9:45 am.</span>
+</div>
+
+<div class="act-block">
+<div class="act-time">Bratislava Highlights (3 hours)</div>
+<div class="act-title">Panoramic and historic tour</div>
+<div class="act-desc">Upon arrival, meet your driver-guide at the hydrofoil dock to begin your tour. Enjoy a drive along the banks of the Danube, seeing the famous Old and New Bridges, fragments of the old city walls including the only remaining gate — Michael's Gate — the Presidential Palace, the Governmental Palace, and the seat of the Slovak Technical University.
+
+Next, visit Bratislava Castle, perched on a hill over the Danube River, originally erected in the Middle Ages and strengthened in the 12th–13th century. One of its towers, the Crown Tower, was where Hungary's crown jewels were kept when Bratislava became the capital city of Hungary.
+
+Visit St. Martin's Cathedral, one of the finest and oldest churches in the city, the site of the coronation of Austro-Hungarian emperors and empresses in the 17th–18th centuries.</div>
+</div>
+
+<div class="transport-row">
+<span class="t-icon">🚗</span>
+<span class="t-text">Private transfer to Budapest (approximately 2.5 hours).</span>
+</div>
+
+<div class="badge-warn">Welcome to Budapest. Upon arrival, transfer to your hotel for check-in. Spend the rest of the day at leisure.</div>
+
+</div>
+</div>
+</div>
+
+<div class="acc-wrap" id="day7">
+<div class="acc-head" onclick="toggleAcc(this)">
+<div class="acc-left"><div class="acc-num">Day 7 · Sunday, May 24</div><div class="acc-name">Wine & Dine in Etyek</div></div>
+<div class="acc-right"><span class="acc-city">Budapest</span><span class="chevron">▾</span></div>
+</div>
+<div class="acc-body">
+<div class="acc-inner">
+
+<div class="act-block">
+<div class="act-time">Morning at leisure</div>
+</div>
+
+<div class="act-block">
+<div class="act-time">Wine & Dine in Etyek (5 hours)</div>
+<div class="act-title">Boutique wineries and Hungarian tradition</div>
+<div class="act-desc">Meet your guide and driver in the hotel lobby and together depart for the charming village of Etyek, situated only 40 minutes from Budapest. Etyek is home to excellent boutique wineries as well as small, family-run wineries nestled between the vineyards. The region produces mostly crisp whites, as well as some of the best pinot noir in the country.
+
+Explore the charming village, filled with quaint tiled-roof houses, beautiful Baroque and Roman churches, old cellar rows, and several artisan food producers. Enjoy lunch at one of the recommended restaurants, such as the Rókusfalvy Inn, followed by an afternoon of wine tastings at various top wineries in the region. Afterwards, return to Budapest.</div>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="acc-wrap" id="day8">
+<div class="acc-head" onclick="toggleAcc(this)">
+<div class="acc-left"><div class="acc-num">Day 8 · Monday, May 25</div><div class="acc-name">Departure</div></div>
+<div class="acc-right"><span class="acc-city">Departure</span><span class="chevron">▾</span></div>
+</div>
+<div class="acc-body">
+<div class="acc-inner">
+
+<div class="transport-row">
+<span class="t-icon">🚗</span>
+<span class="t-text">After check-out, private transfer to Budapest Airport.</span>
+</div>
+<div class="transport-row">
+<span class="t-icon">✈️</span>
+<span class="t-text"><strong>Delta 9694</strong> — departing Budapest at 6:35 am</span>
+</div>
+
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="sec">
+<div class="sec-title">Investment</div>
+<div class="total-box">
+<span class="total-lbl">Total Touring (NET)</span>
+<span class="total-val">€ 3,540</span>
+</div>
+</div>
+
+</div>
+
+<div class="footer">
+<div class="footer-txt"></div>
+</div>
+
+</div>
+
+<script>
+function toggleAcc(el){
+  const body = el.nextElementSibling;
+  const chevron = el.querySelector('.chevron');
+  const isOpen = body.style.display !== 'none';
+  body.style.display = isOpen ? 'none' : 'block';
+  el.classList.toggle('collapsed', isOpen);
+  chevron.style.transform = isOpen ? 'rotate(-90deg)' : 'rotate(0deg)';
+}
+document.addEventListener('DOMContentLoaded', function(){
+  document.querySelectorAll('.acc-wrap').forEach(function(wrap, i){
+    const head = wrap.querySelector('.acc-head');
+    const body = wrap.querySelector('.acc-body');
+    if(i !== 0){
+      body.style.display = 'none';
+      head.classList.add('collapsed');
+      head.querySelector('.chevron').style.transform = 'rotate(-90deg)';
+    }
+  });
+});
+</script>
+
+</body>
+</html>
