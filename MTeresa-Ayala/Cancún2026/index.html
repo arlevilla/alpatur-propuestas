@@ -324,8 +324,8 @@ body{font-family:Georgia,serif;color:#4A4A4A;background:#f0ede8;margin:0;padding
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
 <script>
   var map = L.map('hmap', {scrollWheelZoom:false});
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-    attribution: '',
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© OpenStreetMap contributors',
     maxZoom: 19
   }).addTo(map);
 
