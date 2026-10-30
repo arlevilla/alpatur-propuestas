@@ -1,1 +1,155 @@
-
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Royal Caribbean · ALPATUR</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--az:#2C3D49;--te:#E76F51;--ted:#AF5B3D;--tx:#4A4A4A;--gr:#9E9E9E;--cd:#F5F3F1;--bg:#F8F6F2;--ok:#2a7a4b;--no:#c0392b}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:'Jost',Arial,sans-serif;font-size:15px;line-height:1.5}
+.top{background:var(--az);padding:10px 20px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px}
+.logo{background:#fff;border-radius:10px;padding:4px 8px;display:inline-block}.logo img{width:150px;display:block}
+.ct{color:#fff;font-size:12.5px;text-align:right;line-height:1.45}
+.stripe{height:5px;background:var(--ted)}
+.hero{background:var(--az);color:#fff;text-align:center;padding:30px 18px 28px}
+.hero .k{letter-spacing:.2em;font-size:12px;color:#e8c9bd}
+.hero h1{font-family:'Cormorant Garamond',Georgia,serif;font-size:46px;margin:6px 0 4px;font-weight:600}
+.hero .pa{font-size:17px;margin-bottom:14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+.chip{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.3);border-radius:20px;padding:4px 13px;font-size:13px}
+.wrap{max-width:900px;margin:0 auto;padding:20px 16px 30px}
+h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:28px;color:var(--az);margin:26px 0 10px;padding-bottom:5px;border-bottom:1px solid #ddd}
+h3{font-family:'Cormorant Garamond',Georgia,serif;font-size:21px;color:var(--az);margin:20px 0 8px}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 14px}
+.tab,.htab{border:1px solid var(--az);background:#fff;color:var(--az);border-radius:22px;padding:9px 18px;font:500 15px 'Jost',Arial,sans-serif;cursor:pointer}
+.tab.on,.htab.on{background:var(--az);color:#fff}
+.htabs{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0}
+.ship{background:var(--az);color:#fff;border-radius:8px;padding:10px 14px;font-weight:500}
+.card{background:var(--cd);border-radius:10px;padding:12px 16px;margin:8px 0}
+.card p{margin:4px 0}.card ul{margin:4px 0;padding-left:20px}
+.fl{background:#fff;border:1px solid #e5e1dc;border-radius:10px;padding:10px 12px;margin:10px 0}
+.flt{font-weight:600;color:var(--az);margin-bottom:6px}
+.leg{border:1px solid #eee;border-radius:8px;padding:8px 10px;margin:6px 0;background:#fcfbfa}
+.lh{display:flex;justify-content:space-between;font-size:13px;color:var(--gr)}.lh b{color:var(--az)}
+.lr{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:4px}
+.pt{flex:1 1 190px;display:flex;gap:10px;align-items:flex-start}.pt.r{justify-content:flex-end;text-align:right}.pt.r .ap{order:-1}
+.tm{font-size:24px;font-weight:600;color:var(--az);font-family:'Cormorant Garamond',Georgia,serif}
+.ap{font-size:13px}.dt{color:var(--gr)}
+.arr{color:var(--ted);font-size:18px}
+.stop{background:#fdece6;color:var(--ted);border-radius:14px;text-align:center;padding:4px 10px;font-size:13px;font-weight:500;margin:4px 0}
+.tot{text-align:right;font-weight:600;color:var(--az);margin-top:4px;font-size:14px}
+.note{color:var(--gr);font-size:13px}
+.price{margin:14px 0;border:2px solid var(--te);border-radius:12px;padding:12px 16px;background:#fff}
+.pl{font-weight:500;color:var(--az);margin-bottom:6px}
+.pr{display:flex;flex-wrap:wrap;gap:12px}
+.pb{flex:1 1 200px;background:var(--cd);border-radius:8px;padding:8px 12px}
+.pb span{display:block;font-size:13px;color:var(--gr)}
+.pb b{font-size:24px;color:var(--te);font-family:'Cormorant Garamond',Georgia,serif}
+.inc li{color:var(--tx)}.inc li::marker{color:var(--ok)}.noinc li::marker{color:var(--no)}
+.cond{color:var(--gr);font-size:13.5px}
+.foot{background:var(--az);color:#fff;text-align:center;padding:14px;font-size:13px}
+.pt-print,.hprint{display:none}
+@media print{
+ @page{size:A4;margin:12mm}
+ body{background:#fff;font-size:12px}
+ .tabs,.htabs{display:none!important}
+ .panel,.hpanel{display:block!important;page-break-inside:auto}
+ .pt-print{display:block}.hprint{display:block;font-size:16px;margin:8px 0 2px}
+ .fl,.leg,.card,.price{break-inside:avoid}
+ .panel+.panel{page-break-before:always}
+ .hero h1{font-size:36px}
+}
+@media(max-width:560px){.hero h1{font-size:36px}.ct{text-align:left}}
+</style></head><body>
+<div class="top"><div class="logo"><img src="data:image/jpeg;base64,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" alt="ALPATUR"></div>
+<div class="ct">Arlene Villasanti<br>ventas@alpaturviajes.com<br>+595 983 136 000</div></div><div class="stripe"></div>
+<div class="hero"><div class="k">PROPUESTA DE VIAJE · 2026</div><h1>Royal Caribbean</h1><div class="pa">Para: Raquel Oviedo y familia</div>
+<div class="chips"><span class="chip">👥 7 pasajeros</span><span class="chip">🌙 4 noches de crucero</span><span class="chip">✈️ Copa Airlines</span><span class="chip">📅 Diciembre 2026</span><span class="chip">2 opciones</span></div></div>
+<div class="wrap">
+<h2>Elige tu crucero</h2>
+<div class="tabs"><button class="tab on" onclick="showO(0,this)">Opción 1 · Utopia of the Seas</button><button class="tab" onclick="showO(1,this)">Opción 2 · Wonder of the Seas</button></div>
+<div class="panel" id="p0"><h2 class="pt-print">Opción 1 · Utopia of the Seas</h2>
+<div class="ship">🚢 Utopia of the Seas · salida desde Port Canaveral (Orlando), Florida</div>
+<h3>🚢 Crucero · 4 noches</h3>
+<div class="card"><p><b>Perfect Day CocoCay &amp; Bahamas</b> · lunes 14 al viernes 18 de diciembre de 2026</p>
+<p>3 cabinas con balcón grande con vista al mar:</p>
+<ul><li>Cabina 1: 2 adultos + 1 niño (7 años)</li><li>Cabina 2: 2 adultos (1 adulto + 1 de 14 años)</li><li>Cabina 3: 2 adultos (1 adulto + 1 de 15 años)</li></ul></div>
+<h3>✈️ Vuelos Copa Airlines · Economy Classic</h3>
+<div class="fl"><div class="flt">Ida · sábado 12 de diciembre de 2026</div><div class="leg"><div class="lh"><b>CM 290</b><span class="dur">⏱ 6h 13m</span></div>
+<div class="lr"><div class="pt"><div class="tm">06:32</div><div class="ap"><b>ASU</b> · Silvio Pettirossi<br>Asunción<br><span class="dt">sáb 12 dic</span></div></div>
+<div class="arr">✈️</div>
+<div class="pt r"><div class="tm">10:45</div><div class="ap"><b>PTY</b> · Tocumen Internacional<br>Ciudad de Panamá<br><span class="dt">sáb 12 dic</span></div></div></div></div><div class="stop">Escala en Ciudad de Panamá: 1h 19m</div><div class="leg"><div class="lh"><b>CM 478</b><span class="dur">⏱ 3h 30m</span></div>
+<div class="lr"><div class="pt"><div class="tm">12:04</div><div class="ap"><b>PTY</b> · Tocumen Internacional<br>Ciudad de Panamá<br><span class="dt">sáb 12 dic</span></div></div>
+<div class="arr">✈️</div>
+<div class="pt r"><div class="tm">15:34</div><div class="ap"><b>MCO</b> · Orlando Internacional<br>Orlando<br><span class="dt">sáb 12 dic</span></div></div></div></div><div class="tot">Duración total: 11h 02m</div></div>
+<div class="fl"><div class="flt">Regreso · viernes 18 de diciembre de 2026</div><div class="leg"><div class="lh"><b>CM 459</b><span class="dur">⏱ 3h 33m</span></div>
+<div class="lr"><div class="pt"><div class="tm">15:04</div><div class="ap"><b>MCO</b> · Orlando Internacional<br>Orlando<br><span class="dt">vie 18 dic</span></div></div>
+<div class="arr">✈️</div>
+<div class="pt r"><div class="tm">18:37</div><div class="ap"><b>PTY</b> · Tocumen Internacional<br>Ciudad de Panamá<br><span class="dt">vie 18 dic</span></div></div></div></div><div class="stop">Escala en Ciudad de Panamá: 2h 46m</div><div class="leg"><div class="lh"><b>CM 291</b><span class="dur">⏱ 6h 09m</span></div>
+<div class="lr"><div class="pt"><div class="tm">21:23</div><div class="ap"><b>PTY</b> · Tocumen Internacional<br>Ciudad de Panamá<br><span class="dt">vie 18 dic</span></div></div>
+<div class="arr">✈️</div>
+<div class="pt r"><div class="tm">05:32</div><div class="ap"><b>ASU</b> · Silvio Pettirossi<br>Asunción<br><span class="dt">sáb 19 dic</span></div></div></div></div><div class="tot">Duración total: 12h 28m</div></div>
+<p class="note">🎒 Mochila · 🧳 equipaje de cabina · 🧳 equipaje de bodega</p>
+<h3>🏨 Hotel en Orlando · 2 noches (12 al 14 de diciembre)</h3>
+<div class="card"><p><b>DoubleTree by Hilton at the Entrance to Universal Orlando</b></p><p>🛏️ 2 habitaciones · 🍳 con desayuno</p></div>
+<h3>🚐 Traslados</h3><div class="card"><p>Aeropuerto de Orlando (MCO) ↔ hotel ↔ puerto ↔ aeropuerto (MCO)</p></div>
+<h3>🛡 Asistencia al viajero</h3><div class="card"><p>Incluida para los 7 pasajeros, desde la salida hasta el regreso.</p></div>
+<div class="price"><div class="pl">Precio final por los 7 pasajeros</div>
+<div class="pr"><div class="pb"><b>USD 16.275</b></div></div></div></div><div class="panel" id="p1" style="display:none"><h2 class="pt-print">Opción 2 · Wonder of the Seas</h2>
+<div class="ship">🚢 Wonder of the Seas · salida desde Miami, Florida</div>
+<h3>🚢 Crucero · 4 noches</h3>
+<div class="card"><p><b>Perfect Day CocoCay &amp; Bahamas</b> · lunes 14 al viernes 18 de diciembre de 2026</p>
+<p>3 cabinas con balcón con vistas al mar:</p>
+<ul><li>Cabina 1: 2 adultos + 1 niño (7 años)</li><li>Cabina 2: 2 adultos (1 adulto + 1 de 14 años)</li><li>Cabina 3: 2 adultos (1 adulto + 1 de 15 años)</li></ul></div>
+<h3>✈️ Vuelos Copa Airlines · Standard Economy</h3>
+<div class="fl"><div class="flt">Ida · sábado 12 de diciembre de 2026</div><div class="leg"><div class="lh"><b>CM 290</b><span class="dur">⏱ 6h 13m</span></div>
+<div class="lr"><div class="pt"><div class="tm">06:32</div><div class="ap"><b>ASU</b> · Silvio Pettirossi<br>Asunción<br><span class="dt">sáb 12 dic</span></div></div>
+<div class="arr">✈️</div>
+<div class="pt r"><div class="tm">10:45</div><div class="ap"><b>PTY</b> · Tocumen Internacional<br>Ciudad de Panamá<br><span class="dt">sáb 12 dic</span></div></div></div></div><div class="stop">Escala en Ciudad de Panamá: 1h 48m</div><div class="leg"><div class="lh"><b>CM 485</b><span class="dur">⏱ 3h 06m</span></div>
+<div class="lr"><div class="pt"><div class="tm">12:33</div><div class="ap"><b>PTY</b> · Tocumen Internacional<br>Ciudad de Panamá<br><span class="dt">sáb 12 dic</span></div></div>
+<div class="arr">✈️</div>
+<div class="pt r"><div class="tm">15:39</div><div class="ap"><b>MIA</b> · Miami Internacional<br>Miami<br><span class="dt">sáb 12 dic</span></div></div></div></div><div class="tot">Duración total: 11h 07m</div></div>
+<div class="fl"><div class="flt">Regreso · viernes 18 de diciembre de 2026</div><div class="leg"><div class="lh"><b>CM 333</b><span class="dur">⏱ 3h 14m</span></div>
+<div class="lr"><div class="pt"><div class="tm">16:31</div><div class="ap"><b>MIA</b> · Miami Internacional<br>Miami<br><span class="dt">vie 18 dic</span></div></div>
+<div class="arr">✈️</div>
+<div class="pt r"><div class="tm">19:45</div><div class="ap"><b>PTY</b> · Tocumen Internacional<br>Ciudad de Panamá<br><span class="dt">vie 18 dic</span></div></div></div></div><div class="stop">Escala en Ciudad de Panamá: 1h 38m</div><div class="leg"><div class="lh"><b>CM 291</b><span class="dur">⏱ 6h 09m</span></div>
+<div class="lr"><div class="pt"><div class="tm">21:23</div><div class="ap"><b>PTY</b> · Tocumen Internacional<br>Ciudad de Panamá<br><span class="dt">vie 18 dic</span></div></div>
+<div class="arr">✈️</div>
+<div class="pt r"><div class="tm">05:32</div><div class="ap"><b>ASU</b> · Silvio Pettirossi<br>Asunción<br><span class="dt">sáb 19 dic</span></div></div></div></div><div class="tot">Duración total: 11h 01m</div></div>
+<p class="note">🎒 Mochila · 🧳 equipaje de cabina · 🧳 equipaje de bodega</p>
+<h3>🏨 Hotel en Miami · 2 noches (12 al 14 de diciembre)</h3>
+<div class="htabs"><button class="htab on" onclick="showH(0,this)">Clinton Hotel South Beach</button><button class="htab" onclick="showH(1,this)">Chesterfield Hotel</button></div>
+<h3>🚐 Traslados</h3><div class="card"><p>Aeropuerto de Miami (MIA) ↔ hotel ↔ puerto ↔ aeropuerto (MIA)</p></div>
+<h3>🛡 Asistencia al viajero</h3><div class="card"><p>Incluida para los 7 pasajeros, desde la salida hasta el regreso.</p></div>
+<h3>Elige tu hotel y ve el precio final</h3>
+<div class="hpanel" id="h0"><h4 class="hprint">Clinton Hotel South Beach</h4><div class="card"><p><b>Clinton Hotel South Beach</b> ★★★★</p><p>📍 Miami Beach, a 3 minutos a pie de Ocean Drive</p><p>🛏️ 2 habitaciones cuádruples (2 camas dobles) · solo alojamiento</p><p>🍳 Desayuno completo disponible con costo adicional</p></div>
+<div class="price"><div class="pl">Precio final por los 7 pasajeros</div>
+<div class="pr"><div class="pb"><b>USD 14.780</b></div></div></div></div><div class="hpanel" id="h1"><h4 class="hprint">Chesterfield Hotel</h4><div class="card"><p><b>Chesterfield Hotel</b> </p><p>🛏️ Junior Suite 2 Queen Beds y Double Queen Jr Suite · solo alojamiento</p></div>
+<div class="price"><div class="pl">Precio final por los 7 pasajeros</div>
+<div class="pr"><div class="pb"><b>USD 15.305</b></div></div></div></div></div>
+<h2>Opcionales</h2>
+<p class="note">Iguales para ambas opciones. No están incluidos en el precio final.</p>
+<div class="opt"><div class="card"><h3>🍹 Paquete de bebidas · 4 días</h3>
+<p><b>Mayores de 21 (3 pasajeros):</b> Deluxe Beverage Package + Royal Beach Club Open Bar Day Pass. Bebidas premium ilimitadas durante todo el crucero (licores, cócteles, vinos, cervezas y bebidas sin alcohol) y pase de día al Royal Beach Club Paradise Island, con comida, bebidas, WiFi, traslado en ferry y amenidades básicas.</p>
+<p><b>Resto del grupo (4 pasajeros):</b> Refreshment Package + Royal Beach Club Non-Alcoholic Day Pass.</p>
+<div class="pr"><div class="pb"><b>USD 1.905</b></div></div></div>
+<div class="card"><h3>🔑 The Key · 7 pasajeros · 4 días</h3>
+<ul><li>Acceso prioritario a la terminal el primer día y entrega del equipaje de mano en la cabina</li><li>Almuerzo de bienvenida exclusivo</li><li>20% de descuento en restaurantes de especialidad (reservando a bordo el día 1)</li><li>50% de descuento en actividades deportivas seleccionadas</li><li>USD 60 de descuento en spa con un gasto mínimo de USD 250</li><li>VOOM WiFi de alta velocidad, 1 dispositivo</li><li>Acceso rápido a actividades seleccionadas y asientos reservados en shows</li><li>Desayuno á la carte el día de desembarque, con salida a tu ritmo</li></ul>
+<div class="pr"><div class="pb"><b>USD 1.135</b></div></div></div></div>
+<h3>Incluye</h3><ul class="inc">
+<li>Crucero de 4 noches en cabina con balcón, con propinas, impuestos y tasas incluidos</li>
+<li>Alimentos, actividades a bordo, entretenimiento ilimitado, espectáculos en vivo y comedia, programas juveniles</li>
+<li>Aéreo Copa Airlines con mochila, equipaje de cabina y de bodega</li>
+<li>Hotel con 2 habitaciones</li>
+<li>Traslados</li>
+<li>Asistencia al viajero</li></ul><h3>No incluye</h3><ul class="noinc"><li>Paquete de bebidas y The Key (opcionales)</li><li>Restaurantes de especialidad y excursiones</li></ul>
+<h2>Condiciones y observaciones</h2><div class="cond">
+<p>Pago inmediato del 100% para confirmar, debido a la cercanía de la fecha del viaje.</p>
+<p>Los paquetes opcionales (bebidas y The Key) se contratan para todas las cabinas y todos los pasajeros. Los precios indicados ya son por los 7 pasajeros.</p>
+<p>Los paquetes opcionales deben contratarse antes del viaje para mantener esta tarifa. Una vez a bordo se pierde el descuento.</p>
+</div>
+</div>
+<div class="foot">ALPATUR · Arlene Villasanti · ventas@alpaturviajes.com · +595 983 136 000</div>
+<script>
+function showO(i,b){document.getElementById('p0').style.display=i==0?'block':'none';document.getElementById('p1').style.display=i==1?'block':'none';document.querySelectorAll('.tab').forEach(function(x){x.classList.remove('on')});b.classList.add('on');}
+function showH(i,b){document.getElementById('h0').style.display=i==0?'block':'none';document.getElementById('h1').style.display=i==1?'block':'none';document.querySelectorAll('.htab').forEach(function(x){x.classList.remove('on')});b.classList.add('on');}
+document.getElementById('h1').style.display='none';
+</script></body></html>
